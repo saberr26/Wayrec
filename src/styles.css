@@ -1,0 +1,250 @@
+/* WF-Recorder GUI - Minimal Custom Styles (Official Gemini Colors) */
+
+/* ============= MAIN WINDOW ============= */
+window {
+    background-color: #1f1f1f; 
+}
+
+/* ============= HEADER BAR ============= */
+.header-bar {
+    background-color: #2e2e2e; 
+    border-radius: 6px;
+    margin: 0px;
+    
+}
+
+/* ============= MAIN CONTENT CARD ============= */
+.main-card {
+    background-color: #2e2e2e;
+    border-radius: 8px;
+    margin: 16px;
+    padding: 24px;
+    border: 1px solid #454545; 
+}
+
+/* ============= BUTTON BASE STYLE ============= */
+.record-button, .stop-button-large, .area-button {
+    padding: 12px 24px;
+    font-size: 15px;
+    background-color: rgba(26, 115, 232, 0.15);
+    border: 2px solid rgba(26, 115, 232, 0.5);
+    color: #1a73e8;
+    font-weight: bold;
+    margin: 8px;
+    transition: background-color 0.2s ease-in-out;
+    min-width: 120px;
+    min-height: 13px;
+    
+}
+
+.record-button:active, .stop-button:active, .area-button:active, button:active {
+    transform: none; 
+}
+
+/* ============= SPECIFIC BUTTON COLORS (GEMINI PALETTE) ============= */
+.record-button {
+    background-color: rgba(24, 128, 56, 0.15);
+    border: 2px solid rgba(24, 128, 56, 0.5);
+    color: #188038;
+    border-radius: 30px;
+    transition: all 300ms cubic-bezier(0.2, 0.0, 0.1, 0);
+}
+.record-button:hover {
+    background-color: rgba(24, 128, 56, 0.25);
+    border-color: rgba(24, 128, 56, 0.6);
+    border-radius: 30px;
+    transition: all 300ms cubic-bezier(0.2, 0.0, 0.1, 0);
+
+
+}
+
+
+.stop-button-large {
+    background-color: rgba(220, 53, 69, 0.15);
+    border: 2px solid rgba(220, 53, 69, 0.5);
+    transition: all 300ms cubic-bezier(0.2, 0.0, 0.1, 0);
+    color: #dc3545;
+    min-width: 420px;
+    min-height: 13px;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    min-width: 369px;
+}
+.stop-button-large:hover {
+    background-color: rgba(220, 53, 69, 0.25);
+    border-color: rgba(220, 53, 69, 0.6);
+    transition: all 300ms cubic-bezier(0.2, 0.0, 0.1, 0);
+    min-width: 420px;
+    min-height: 13px;
+	min-width: 420px;
+    min-height: 13px;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    min-width: 369px;
+}
+
+
+.area-button {
+    background-color: rgba(26, 115, 232, 0.15);
+    border: 2px solid rgba(26, 115, 232, 0.5);
+    border-radius: 30px;
+    transition: all 300ms cubic-bezier(0.2, 0.0, 0.1, 0);
+    color: #1a73e8;
+}
+.area-button:hover {
+    background-color: rgba(26, 115, 232, 0.25);
+    border-radius: 30px;
+    transition: all 300ms cubic-bezier(0.2, 0.0, 0.1, 0);
+    border-color: rgba(26, 115, 232, 0.6);
+}
+
+.recording-status-label {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 22px;
+    font-family: monospace;
+    font-weight: 500;
+}
+
+.time-label {
+    color: #ff4444;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+/* ============= SETTINGS TOGGLE BUTTON ============= */
+.settings-toggle-button {
+    background-color: #454545;
+    color: #e0e0e0;
+    border: 1px solid #656565;
+    border-radius: 6px;
+    padding: 8px 16px;
+    margin: 8px;
+    font-weight: bold;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.settings-toggle-button:hover {
+    background-color: #555555;
+    border-color: #757575;
+}
+
+
+/* ============= SETTINGS SECTIONS ============= */
+.settings-section {
+    background-color: transparent;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 12px 0;
+    border: 1px solid #454545;
+}
+
+.section-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #e0e0e0;
+    margin-bottom: 12px;
+}
+
+/* ============= INPUT FIELDS ============= */
+entry {
+    background-color: #1f1f1f;
+    border: 1px solid #454545;
+    border-radius: 6px;
+    padding: 10px;
+    margin: 8px 0;
+    font-size: 14px;
+    color: #e0e0e0;
+    transition: border-color 0.2s ease-in-out;
+}
+
+entry:focus {
+    border-color: #1a73e8; 
+    background-color: #1f1f1f;
+}
+
+/* ============= COMBO BOX ============= */
+combobox > box {
+    background-color: #1f1f1f;
+    border: 1px solid #454545;
+    border-radius: 6px;
+    padding: 6px;
+    transition: border-color 0.2s ease-in-out;
+    color: #e0e0e0;
+}
+
+combobox:hover > box {
+    border-color: #1a73e8;
+}
+
+/* ============= SWITCHES ============= */
+switch {
+    background-color: #454545;
+    border-radius: 15px;
+    margin: 8px;
+    min-width: 40px;
+    min-height: 20px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+switch:checked {
+    background-color: rgba(24, 128, 56, 0.55); 
+}
+
+switch slider {
+    background-color: white;
+    border-radius: 50%;
+    margin: 2px;
+    box-shadow: none;
+}
+
+/* ============= STATUS LABELS ============= */
+.status-label {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 6px;
+    margin: 8px 0;
+    border: 1px solid transparent;
+}
+
+.status-ready {
+    background-color: rgba(24, 128, 56, 0.15); 
+    color: #188038;
+}
+
+.status-recording {
+    background-color: rgba(217, 48, 37, 0.15); 
+    color: #d93025;
+}
+
+/* ============= TOOLTIPS ============= */
+tooltip {
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+    border-radius: 6px;
+    padding: 6px 10px;
+    font-size: 12px;
+    border: 1px solid #454545;
+}
+
+/* ============= SCROLLBARS ============= */
+scrollbar {
+    background-color: transparent;
+    border-radius: 8px;
+}
+
+scrollbar slider {
+    background-color: #454545;
+    border-radius: 8px;
+    min-width: 6px;
+    min-height: 6px;
+}
+
+scrollbar slider:hover {
+    background-color: #656565;
+}
