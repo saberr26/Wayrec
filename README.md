@@ -27,7 +27,7 @@ Replace 'YOUR_USERNAME/waycast' with your GitHub username and repository name.
 </div>
 
 <div align="center">
-<sub>A clean and modern GTK4/Libadwaita GUI for wf-recorder.</sub>
+<sub>A clean and wayland forst GTK4/Libadwaita GUI for wf-recorder.</sub>
 </div>
 
 <br>
@@ -39,9 +39,7 @@ Replace 'YOUR_USERNAME/waycast' with your GitHub username and repository name.
 About Wayrec
 </h2>
 
-Waycast is a simple yet powerful graphical user interface for the excellent wf-recorder command-line utility. It provides an intuitive way to capture your screen on Wayland compositors (like Sway, Hyprland, and GNOME) without needing to memorize terminal commands.
-
-The goal is to offer a straightforward recording experience with easy access to common options and the flexibility to configure advanced parameters when needed.
+Wayrec is a simple yet powerful graphical user interface for the excellent wf-recorder command-line utility. It provides an intuitive way to capture your screen on Wayland compositors (like Sway, Hyprland, and GNOME) without needing to memorize terminal commands.
 
 <br>
 
@@ -54,7 +52,7 @@ Features
 
 Modern Interface: A clean and adaptive UI built with Python and GTK4/Libadwaita.
 
-Flexible Recording: Record your full screen or select a specific area/window using slurp.
+Flexible Recording: Record your full screen or select a specific area/window
 
 Easy Controls: Quickly toggle audio, set the framerate, and start/stop recording with a single click.
 
@@ -71,7 +69,7 @@ Persistent Settings: Your configuration is automatically saved for the next sess
 Requirements
 </h2>
 
-To run Waycast, you need the following dependencies installed on your system:
+To run Wayrec, you need the following dependencies installed on your system:
 
 wf-recorder: The core command-line screen recorder.
 
@@ -90,50 +88,11 @@ gtk4 and libadwaita.
 Installation
 </h2>
 
-<sub>
-    <img src="https://cdn.simpleicons.org/flatpak/white" height="20" width="20">
-</sub>
-Flatpak (Recommended)
-
-</h4>
 
 <details><summary>Click to expand</summary>
 <p>
 
-The easiest way to install Waycast is via Flatpak, which bundles all dependencies.
 
-Note: The application is not yet on Flathub. These are the instructions for when it becomes available.
-
-# Install from Flathub
-flatpak install flathub com.github.YOUR_USERNAME.Waycast
-
-# Run
-flatpak run com.github.YOUR_USERNAME.Waycast
-
-</p>
-</details>
-
-<h4>
-<sub>
-<img src="https://cdn.simpleicons.org/archlinux/white" height="20" width="20">
-</sub>
-Arch Linux (AUR)
-</h4>
-
-<details><summary>Click to expand>
-<p>
-
-An AUR package is available for Arch Linux users.
-
-Note: This is a placeholder. You or a community member would need to create this package.
-
-Using your favourite AUR helper:
-
-# Replace 'waycast-git' with the actual package name
-yay -S waycast-git
-
-</p>
-</details>
 
 <h4>
 <sub>
