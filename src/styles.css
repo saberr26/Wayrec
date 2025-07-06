@@ -2,15 +2,14 @@
 
 /* ============= MAIN WINDOW ============= */
 window {
-    background-color: #1f1f1f; 
+    background-color: #1f1f1f;
 }
 
 /* ============= HEADER BAR ============= */
 .header-bar {
-    background-color: #2e2e2e; 
-    border-radius: 6px;
+    background-color: #1f1f1f;
+    border-radius: 0px;
     margin: 0px;
-    
 }
 
 /* ============= MAIN CONTENT CARD ============= */
@@ -19,11 +18,13 @@ window {
     border-radius: 8px;
     margin: 16px;
     padding: 24px;
-    border: 1px solid #454545; 
+    border: 1px solid #454545;
 }
 
 /* ============= BUTTON BASE STYLE ============= */
-.record-button, .stop-button-large, .area-button {
+.record-button,
+.stop-button-large,
+.area-button {
     padding: 12px 24px;
     font-size: 15px;
     background-color: rgba(26, 115, 232, 0.15);
@@ -34,71 +35,65 @@ window {
     transition: background-color 0.2s ease-in-out;
     min-width: 120px;
     min-height: 13px;
-    
 }
 
-.record-button:active, .stop-button:active, .area-button:active, button:active {
-    transform: none; 
+.record-button:active,
+.stop-button:active,
+.area-button:active,
+button:active {
+    transform: none;
 }
 
 /* ============= SPECIFIC BUTTON COLORS (GEMINI PALETTE) ============= */
 .record-button {
-    background-color: rgba(24, 128, 56, 0.15);
-    border: 2px solid rgba(24, 128, 56, 0.5);
-    color: #188038;
+    background-color: rgba(245, 158, 11, 0.15);
+    border: 2px solid rgba(245, 158, 11, 0.5);
+    color: #f59e0b;
     border-radius: 30px;
-    transition: all 300ms cubic-bezier(0.2, 0.0, 0.1, 0);
+    transition: all 300ms cubic-bezier(0.2, 0, 0.1, 0);
 }
 .record-button:hover {
-    background-color: rgba(24, 128, 56, 0.25);
-    border-color: rgba(24, 128, 56, 0.6);
+    background-color: rgba(245, 158, 11, 0.25);
+    border-color: rgba(245, 158, 11, 0.7);
     border-radius: 30px;
-    transition: all 300ms cubic-bezier(0.2, 0.0, 0.1, 0);
-
-
+    transition: all 300ms cubic-bezier(0.2, 0, 0.1, 0);
 }
-
 
 .stop-button-large {
     background-color: rgba(220, 53, 69, 0.15);
     border: 2px solid rgba(220, 53, 69, 0.5);
-    transition: all 300ms cubic-bezier(0.2, 0.0, 0.1, 0);
+    transition: all 300ms cubic-bezier(0.2, 0, 0.1, 0);
     color: #dc3545;
-    min-width: 420px;
+    min-width: 372px;
     min-height: 13px;
     border-radius: 8px;
     padding: 12px 24px;
-    font-size: 16px;
+    font-size: 21px;
     font-weight: bold;
-    min-width: 369px;
 }
 .stop-button-large:hover {
     background-color: rgba(220, 53, 69, 0.25);
     border-color: rgba(220, 53, 69, 0.6);
-    transition: all 300ms cubic-bezier(0.2, 0.0, 0.1, 0);
-    min-width: 420px;
-    min-height: 13px;
-	min-width: 420px;
+    transition: all 300ms cubic-bezier(0.2, 0, 0.1, 0);
+    min-width: 372px;
     min-height: 13px;
     border-radius: 8px;
-    padding: 12px 24px;
-    font-size: 16px;
+    padding: 12px 22px;
+    font-size: 20.5px;
     font-weight: bold;
-    min-width: 369px;
 }
-
 
 .area-button {
     background-color: rgba(26, 115, 232, 0.15);
     border: 2px solid rgba(26, 115, 232, 0.5);
     border-radius: 30px;
-    transition: all 300ms cubic-bezier(0.2, 0.0, 0.1, 0);
+    transition: all 300ms cubic-bezier(0.2, 0, 0.1, 0);
     color: #1a73e8;
 }
 .area-button:hover {
     background-color: rgba(26, 115, 232, 0.25);
     border-radius: 30px;
-    transition: all 300ms cubic-bezier(0.2, 0.0, 0.1, 0);
+    transition: all 300ms cubic-bezier(0.2, 0, 0.1, 0);
     border-color: rgba(26, 115, 232, 0.6);
 }
 
@@ -111,9 +106,17 @@ window {
 
 .time-label {
     color: #ff4444;
-    font-size: 50px;
+    font-size: 70px;
     font-weight: bold;
     font-family: monospace;
+}
+
+.flat {
+    border-radius: 4px;
+    min-height: 25px;
+}
+.recording-view {
+    padding: 0px;
 }
 
 /* ============= SETTINGS TOGGLE BUTTON ============= */
@@ -132,7 +135,6 @@ window {
     background-color: #555555;
     border-color: #757575;
 }
-
 
 /* ============= SETTINGS SECTIONS ============= */
 .settings-section {
@@ -163,7 +165,7 @@ entry {
 }
 
 entry:focus {
-    border-color: #1a73e8; 
+    border-color: #1a73e8;
     background-color: #1f1f1f;
 }
 
@@ -192,7 +194,7 @@ switch {
 }
 
 switch:checked {
-    background-color: rgba(24, 128, 56, 0.55); 
+    background-color: rgba(24, 128, 56, 0.55);
 }
 
 switch slider {
@@ -203,6 +205,18 @@ switch slider {
 }
 
 /* ============= STATUS LABELS ============= */
+.shortcut-display {
+    background-color: transparent;
+    color:rgba(220, 53, 69);
+    border: transparent;
+    border-radius: 6px;
+    padding: 0px 0px;
+    margin: 0px 0px;
+    font-size: 10px;
+    font-weight: bold;
+    font-family: monospace;
+}
+
 .status-label {
     font-size: 14px;
     font-weight: bold;
@@ -213,13 +227,14 @@ switch slider {
 }
 
 .status-ready {
-    background-color: rgba(24, 128, 56, 0.15); 
+    background-color: rgba(24, 128, 56, 0.15);
     color: #188038;
 }
 
-.status-recording {
-    background-color: rgba(217, 48, 37, 0.15); 
-    color: #d93025;
+.recording-status-label {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 22px;
+    font-weight: 500;
 }
 
 /* ============= TOOLTIPS ============= */
@@ -248,3 +263,5 @@ scrollbar slider {
 scrollbar slider:hover {
     background-color: #656565;
 }
+
+
