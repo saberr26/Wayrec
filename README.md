@@ -36,7 +36,7 @@ Replace 'YOUR_USERNAME/waycast' with your GitHub username and repository name.
 <sub>
 <img src="https://www.google.com/search?q=https://raw.githubusercontent.com/primer/octicons/main/icons/info-16.svg" height="25" width="25">
 </sub>
-About Waycast
+About Wayrec
 </h2>
 
 Waycast is a simple yet powerful graphical user interface for the excellent wf-recorder command-line utility. It provides an intuitive way to capture your screen on Wayland compositors (like Sway, Hyprland, and GNOME) without needing to memorize terminal commands.
